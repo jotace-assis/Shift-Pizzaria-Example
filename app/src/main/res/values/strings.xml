@@ -4,4 +4,5 @@
     <string name="hint_informe_sua_senha">Type password</string>
     <string name="label_conectar">Connect</string>
     <string name="message_campo_obrigatorio">Enter attribute</string>
+    <string name="hello">Hello, %1$s</string>
 </resources>

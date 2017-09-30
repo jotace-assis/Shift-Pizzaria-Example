@@ -1,10 +1,13 @@
 package br.com.fiap.pizzaria;
 
+import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import static br.com.fiap.pizzaria.Constants.KEY_LOGIN;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -37,6 +40,9 @@ public class LoginActivity extends AppCompatActivity {
 
         if (login.equals("android") && password.equals("123")) {
             // SUCESSO
+            Intent telaMenu = new Intent(this, MenuActivity.class);
+            telaMenu.putExtra(Constants.KEY_LOGIN, login);
+            startActivity(telaMenu);
         }
         else {
             // FALHA

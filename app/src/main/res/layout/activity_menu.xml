@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_padrao"
+    tools:context="br.com.fiap.pizzaria.MenuActivity">
+
+    <include layout="@layout/cabecalho"
+        android:id="@+id/meu_cabecalho"/>
+
+    <include layout="@layout/rodape"
+        android:id="@+id/meu_rodape" />
+
+    <RelativeLayout
+        android:layout_below="@id/meu_cabecalho"
+        android:layout_above="@id/meu_rodape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvGreating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Olá, terraqueo"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+
+        <Button style="@style/botao"
+            android:layout_below="@+id/tvGreating"
+            android:id="@+id/btFazerPedido"
+            android:text="Fazer Pedido"
+            android:textAllCaps="false"/>
+
+        <Button style="@style/botao"
+            android:layout_below="@+id/btFazerPedido"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/btSobre"
+            android:text="Sobre"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
