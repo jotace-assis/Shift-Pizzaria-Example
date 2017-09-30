@@ -3,5 +3,5 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#00796B</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="corFonteBotao">#FFF</color>
+    <color name="corFonteBotao">#FFFFFF</color>
 </resources>
