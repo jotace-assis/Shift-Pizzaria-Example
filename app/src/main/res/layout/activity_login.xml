@@ -9,9 +9,9 @@
     tools:context="br.com.fiap.pizzaria.LoginActivity">
 
     <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/inputLogin">
+        android:layout_height="wrap_content">
 
         <EditText
             android:layout_width="match_parent"
@@ -20,29 +20,30 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/inputPassword">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_informe_sua_senha" />
-</android.support.design.widget.TextInputLayout>
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_informe_sua_senha" />
+    </android.support.design.widget.TextInputLayout>
 
     <TextView
+        android:id="@+id/outputMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="minha mensagem"
         android:gravity="center"
-        android:visibility="gone"
-        tools:visibility="visible"
         android:padding="@dimen/padding_padrao"
-        android:id="@+id/outputMessage"/>
+        android:text="minha mensagem"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
     <Button
         style="@style/botao"
-        android:text="@string/label_conectar"
-        android:onClick="conectar"/>
-
+        android:onClick="conectar"
+        android:text="@string/label_conectar" />
 
 
 </LinearLayout>
