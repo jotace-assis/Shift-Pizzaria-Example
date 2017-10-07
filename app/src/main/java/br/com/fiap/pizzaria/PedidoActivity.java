@@ -9,6 +9,7 @@ import android.widget.Spinner;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class PedidoActivity extends AppCompatActivity {
 
@@ -36,7 +37,10 @@ public class PedidoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pedido);
 
         ButterKnife.bind(this);
+    }
 
+    @OnClick(R.id.btFecharPedido)
+    public void fecharPedido() {
 
     }
 }
