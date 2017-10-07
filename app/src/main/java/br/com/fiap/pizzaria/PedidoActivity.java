@@ -69,18 +69,7 @@ public class PedidoActivity extends AppCompatActivity {
         ivLoading.clearAnimation();
         ivLoading.startAnimation(anim);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent telaPedidoFinalizado = new Intent(PedidoActivity.this, PedidoFinalizadoActivity.class);
-                startActivity(telaPedidoFinalizado);
-                ivLoading.clearAnimation();
-                loading.setVisibility(View.GONE);
-            }
-        }, 2000);
-
-
-        Pedido meuPedido = new Pedido();
+        final Pedido meuPedido = new Pedido();
         meuPedido.setTipoPagamento(spTipoPagamento.getSelectedItem().toString());
 
         List<String> sabores = new ArrayList<>();
@@ -109,6 +98,20 @@ public class PedidoActivity extends AppCompatActivity {
                 meuPedido.setTamanho(getString(R.string.label_grande));
                 break;
         }
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent telaPedidoFinalizado = new Intent(PedidoActivity.this, PedidoFinalizadoActivity.class);
+
+                telaPedidoFinalizado.putExtra(Constants.KEY_MEU_PEDIDO, meuPedido);
+
+                startActivity(telaPedidoFinalizado);
+                ivLoading.clearAnimation();
+                loading.setVisibility(View.GONE);
+            }
+        }, 2000);
 
     }
 }
