@@ -5,4 +5,22 @@
     <string name="label_conectar">Connect</string>
     <string name="message_campo_obrigatorio">Enter attribute</string>
     <string name="hello">Hello, %1$s</string>
+
+    <string name="label_cartao">Cartão</string>
+    <string name="label_cheque">Cheque</string>
+    <string name="label_dinheiro">Dinheiro</string>
+    <string name="label_vr">VR</string>
+
+    <string name="label_atum">Atum</string>
+    <string name="seleciona_pizza">Select Pizza</string>
+    <string name="label_calabresa">Calabresa</string>
+    <string name="label_bacon">bacon</string>
+    <string name="label_mussarela">Mussarela</string>
+    <string name="label_tamanho_pizza">Pizza Size</string>
+    <string name="label_pequena">Small</string>
+    <string name="label_media">Medium</string>
+    <string name="label_grande">Big</string>
+    <string name="label_forma_pagamento">Payment</string>
+    <string name="label_fechar_pedido">Order Pizza</string>
+
 </resources>
